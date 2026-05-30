@@ -2697,6 +2697,7 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 10.0.8",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 10.0.8",
       "Microsoft.AspNetCore.Identity.UI >= 10.0.8",
+      "Microsoft.EntityFrameworkCore >= 10.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.8",
       "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.8"
@@ -2766,6 +2767,10 @@
             "target": "Package",
             "version": "[10.0.8, )"
           },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[10.0.8, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "suppressParent": "All",
             "target": "Package",
@@ -2776,6 +2781,8 @@
             "version": "[10.0.8, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[10.0.8, )"
           }
