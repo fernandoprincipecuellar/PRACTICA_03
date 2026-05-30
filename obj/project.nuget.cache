@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m7agEM2rgms=",
+  "dgSpecHash": "fKaHOWlXxP0=",
   "success": true,
   "projectFilePath": "C:\\Users\\ferna\\OneDrive\\Documentos\\PRACTICA_03\\PRACTICA_03.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\10.0.8\\microsoft.aspnetcore.diagnostics.entityframeworkcore.10.0.8.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.8.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\10.0.8\\microsoft.aspnetcore.identity.ui.10.0.8.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.4\\microsoft.bcl.asyncinterfaces.9.0.4.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.11.0\\microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.codeanalysis.common\\5.0.0\\microsoft.codeanalysis.common.5.0.0.nupkg.sha512",
@@ -26,6 +27,9 @@
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\10.0.8\\microsoft.entityframeworkcore.tools.10.0.8.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.8\\microsoft.extensions.dependencymodel.10.0.8.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\10.0.8\\microsoft.extensions.fileproviders.embedded.10.0.8.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.ml\\5.0.0\\microsoft.ml.5.0.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.ml.cpumath\\5.0.0\\microsoft.ml.cpumath.5.0.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.ml.dataview\\5.0.0\\microsoft.ml.dataview.5.0.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.visualstudio.solutionpersistence\\1.0.52\\microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
@@ -33,13 +37,14 @@
     "C:\\Users\\ferna\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512",
-    "C:\\Users\\ferna\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\system.codedom\\9.0.4\\system.codedom.9.0.4.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.composition\\9.0.0\\system.composition.9.0.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.composition.attributedmodel\\9.0.0\\system.composition.attributedmodel.9.0.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.composition.convention\\9.0.0\\system.composition.convention.9.0.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.composition.hosting\\9.0.0\\system.composition.hosting.9.0.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.composition.runtime\\9.0.0\\system.composition.runtime.9.0.0.nupkg.sha512",
-    "C:\\Users\\ferna\\.nuget\\packages\\system.composition.typedparts\\9.0.0\\system.composition.typedparts.9.0.0.nupkg.sha512"
+    "C:\\Users\\ferna\\.nuget\\packages\\system.composition.typedparts\\9.0.0\\system.composition.typedparts.9.0.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\system.numerics.tensors\\9.0.4\\system.numerics.tensors.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }
