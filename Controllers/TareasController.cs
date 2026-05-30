@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,9 +20,62 @@ namespace PRACTICA_03.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] string? estado, [FromQuery] string? prioridad, [FromQuery] DateTime? fechaInicio, [FromQuery] DateTime? fechaFin)
         {
-            var items = await _context.Tareas.ToListAsync();
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            // Validate and parse enums
+            Estado? estadoEnum = null;
+            if (!string.IsNullOrWhiteSpace(estado))
+            {
+                if (!Enum.TryParse<Estado>(estado, true, out var parsedEstado))
+                {
+                    return BadRequest(new { Error = "Valor de 'estado' inválido. Valores válidos: Pendiente, EnProceso, Completada." });
+                }
+                estadoEnum = parsedEstado;
+            }
+
+            Prioridad? prioridadEnum = null;
+            if (!string.IsNullOrWhiteSpace(prioridad))
+            {
+                if (!Enum.TryParse<Prioridad>(prioridad, true, out var parsedPrioridad))
+                {
+                    return BadRequest(new { Error = "Valor de 'prioridad' inválido. Valores válidos: Baja, Media, Alta." });
+                }
+                prioridadEnum = parsedPrioridad;
+            }
+
+            // Validate date range
+            if (fechaInicio.HasValue && fechaFin.HasValue && fechaInicio.Value > fechaFin.Value)
+            {
+                return BadRequest(new { Error = "'fechaInicio' no puede ser mayor que 'fechaFin'." });
+            }
+
+            var query = _context.Tareas.AsQueryable();
+
+            if (estadoEnum.HasValue)
+            {
+                query = query.Where(t => t.Estado == estadoEnum.Value);
+            }
+
+            if (prioridadEnum.HasValue)
+            {
+                query = query.Where(t => t.Prioridad == prioridadEnum.Value);
+            }
+
+            if (fechaInicio.HasValue)
+            {
+                var start = fechaInicio.Value.Date;
+                query = query.Where(t => t.FechaVencimiento >= start);
+            }
+
+            if (fechaFin.HasValue)
+            {
+                var end = fechaFin.Value.Date;
+                query = query.Where(t => t.FechaVencimiento <= end);
+            }
+
+            var items = await query.ToListAsync();
             return Ok(items);
         }
 

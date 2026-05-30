@@ -36,6 +36,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Map attribute-routed API controllers (e.g. controllers with [ApiController] + [Route("api/[controller]")])
+app.MapControllers();
+
 app.MapStaticAssets();
 
 app.MapControllerRoute(
