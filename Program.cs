@@ -16,6 +16,9 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+// Swagger/OpenAPI
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 // Register HttpClient for external API consumption
 builder.Services.AddHttpClient("JsonPlaceholder", client =>
 {
@@ -40,6 +43,10 @@ else
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+// Swagger middleware (exposed regardless of environment)
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseAuthorization();
 

@@ -7,8 +7,8 @@ namespace PRACTICA_03.Models
         [LoadColumn(0)]
         public string Texto { get; set; } = string.Empty;
 
-        [LoadColumn(1)]
-        public float Label { get; set; }
+        [LoadColumn(1), ColumnName("Label")]
+        public bool Label { get; set; }
     }
 
     public class SentimientoPrediction

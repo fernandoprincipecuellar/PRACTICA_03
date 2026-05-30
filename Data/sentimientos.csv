@@ -1,21 +1,21 @@
 Texto,Label
-El sistema funciona perfectamente,1
-La tarea fue completada con éxito,1
-Estoy muy satisfecho con el servicio,1
-Excelente rendimiento y respuesta rápida,1
-Todo funciona como esperaba,1
-Muy buena experiencia,1
-Quedé contento con el resultado,1
-La interfaz es intuitiva y rápida,1
-Servicio impecable,1
-Recomendado,1
-El sistema falla constantemente,0
-No pude completar la tarea,0
-Muy mala experiencia,0
-La aplicación se cierra inesperadamente,0
-Lento y poco fiable,0
-No responde a mis acciones,0
-Errores frecuentes al guardar,0
-Interfaz confusa y complicada,0
-No me gustó el funcionamiento,0
-Perdí datos al intentarlo,0
+El sistema funciona perfectamente,true
+La tarea fue completada con éxito,true
+Estoy muy satisfecho con el servicio,true
+Excelente rendimiento y respuesta rápida,true
+Todo funciona como esperaba,true
+Muy buena experiencia,true
+Quedé contento con el resultado,true
+La interfaz es intuitiva y rápida,true
+Servicio impecable,true
+Recomendado,true
+El sistema falla constantemente,false
+No pude completar la tarea,false
+Muy mala experiencia,false
+La aplicación se cierra inesperadamente,false
+Lento y poco fiable,false
+No responde a mis acciones,false
+Errores frecuentes al guardar,false
+Interfaz confusa y complicada,false
+No me gustó el funcionamiento,false
+Perdí datos al intentarlo,false
