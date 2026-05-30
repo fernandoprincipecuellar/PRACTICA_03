@@ -21,6 +21,8 @@ builder.Services.AddHttpClient("JsonPlaceholder", client =>
 {
     client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
 });
+// Register SentimientoService as singleton
+builder.Services.AddSingleton<PRACTICA_03.Services.SentimientoService>();
 
 var app = builder.Build();
 
